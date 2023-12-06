@@ -1,0 +1,11 @@
+<ul>
+  <li>模块翻译：{{'title' | translate}}</li>
+  <li>主翻译文件：{{ "TOOLBAR.WELCOME" | translate }}</li>
+  <li>测试不存在：{{ "TOOLBAR.WELCOME1" | translate }}</li>
+  <li>测试参数：{{ "param" | translate:{value: '456'} }}</li>
+</ul>
+<p style="margin: 12px 0 24px">
+  <button (click)="fanyi('title')">fanyi</button>
+  &nbsp;
+  <button (click)="fanyi('TOOLBAR.WELCOME')">fanyi root</button>
+</p>
